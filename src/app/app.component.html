@@ -1,0 +1,52 @@
+<h3>Different ways of providing services in angular for Dependecy Injection</h3>
+<p>
+  <b
+    >1.register providers property with specific module(here using
+    providers:[s1service] property for appmodule)
+  </b>
+</p>
+<div class="row">
+  <div class="col-md-4">
+    <app-c1> </app-c1>
+  </div>
+  <div class="col-md-4">
+    <app-c2> </app-c2>
+  </div>
+  <div class="col-md-4">
+    <app-c3> </app-c3>
+  </div>
+</div>
+<p>
+  <b
+    >2.register providers property with specific Components(here using
+    providers:[s2service] property for each component)</b
+  >
+</p>
+<div class="row">
+  <div class="col-md-4">
+    <app-ic1> </app-ic1>
+  </div>
+  <div class="col-md-4">
+    <app-id2> </app-id2>
+  </div>
+  <div class="col-md-4">
+    <app-ic3> </app-ic3>
+  </div>
+</div>
+<p>
+  <b>
+    3.using angular service default option(providedIn: 'root',) so main service
+    instance use by the all components
+  </b>
+</p>
+<div class="row">
+  <div class="col-md-4">
+    <app-dc1> </app-dc1>
+  </div>
+  <div class="col-md-4">
+    <app-dc2> </app-dc2>
+  </div>
+  <div class="col-md-4">
+    <app-dc3> </app-dc3>
+  </div>
+</div>
